@@ -1,0 +1,2 @@
+//------------COLLISION WITH BULLET
+hp--;

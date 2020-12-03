@@ -5,9 +5,9 @@ moveY = global.axisY * moveSpeed;
 
 //------------SPRITE, IDLE & RUNNING
 if (moveX != 0 || moveY != 0) {
-	sprite_index = sPlayer;
+	sprite_index = sPlayerRun
 } else {
-	sprite_index = sPlayer;
+	sprite_index = sPlayerIdle;
 }
 
 
@@ -17,6 +17,7 @@ if place_meeting(x+moveX, y, oWall) {
 	while (!place_meeting(x+sign(moveX), y, oWall)) {
 		x += sign(moveX);
 	}
+	moveX = 0;
 }
 x += moveX;
 
@@ -25,8 +26,6 @@ if place_meeting(x, y+moveY, oWall) {
 	while (!place_meeting(x, y+sign(moveY), oWall)) {
 		y += sign(moveY);
 	}
+	moveY = 0;
 }
 y += moveY;
-
-//------------BULLET CREATION
-bullet_creation();
