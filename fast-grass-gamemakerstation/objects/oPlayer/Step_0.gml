@@ -1,5 +1,5 @@
 /// @description 
-// Move
+//------------MOVE
 moveX = global.axisX * moveSpeed;
 moveY = global.axisY * moveSpeed;
 
@@ -10,6 +10,8 @@ if (moveX != 0 || moveY != 0) {
 	sprite_index = sPlayerIdle;
 }
 
+//Look direction
+if (moveX != 0) image_xscale = sign(moveX);
 
 //------------COLLISION
 //Horizontal collisions
