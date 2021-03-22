@@ -6,6 +6,7 @@
     {"id":{"name":"sGrass","path":"sprites/sGrass/sGrass.yy",},"order":2,},
     {"id":{"name":"ts_Walls","path":"tilesets/ts_Walls/ts_Walls.yy",},"order":0,},
     {"id":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},"order":2,},
+    {"id":{"name":"oEGun","path":"objects/oEGun/oEGun.yy",},"order":7,},
     {"id":{"name":"sEnemyRun","path":"sprites/sEnemyRun/sEnemyRun.yy",},"order":5,},
     {"id":{"name":"sPlayerIdle","path":"sprites/sPlayerIdle/sPlayerIdle.yy",},"order":9,},
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"order":3,},
