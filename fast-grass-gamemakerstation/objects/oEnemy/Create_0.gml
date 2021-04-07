@@ -7,12 +7,14 @@ moveX = 0;
 moveY = 0;
 moveSpeed = 1.5;
 
+//------------PATHING
+path_start(path_lvl1_1, 1, path_action_reverse, 1);
+
+//------------SHOOTING
+isShooting = 0;
+
 //------------DETECT IF ENEMY HAS WEAPON
-if (hasweapon)
+if (hasweapon == true)
 {
-	mygun = instance_create(x, y, "Gun", oEGun);
-	with (mygun)
-	{
-		owner = other.id;
-	}
-} else mygun = noone;
+	gun = instance_create(x, y, "Gun", oEGun);
+}
