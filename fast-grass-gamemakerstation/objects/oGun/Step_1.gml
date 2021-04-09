@@ -1,5 +1,11 @@
-y = oPlayer.y + 3;
-x = oPlayer.x;
+if (!instance_exists(oPlayer)) 
+{
+	objectFollow = oGun;
+	image_alpha = 0;
+}
+
+y = objectFollow.y + 3;
+x = objectFollow.x;
 
 image_angle = point_direction(x, y, mouse_x, mouse_y);
 

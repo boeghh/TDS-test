@@ -1,8 +1,5 @@
-x = owner.x;
-y = owner.y;
-
-image_xscale = abs(owner.image_xscale);
-image_yscale = abs(owner.image_yscale);
+//image_xscale = abs(owner.image_xscale);
+//image_yscale = abs(owner.image_yscale);
 
 if (instance_exists(oPlayer)) 
 {
@@ -15,7 +12,11 @@ if (instance_exists(oPlayer))
 		{
 			countdown = countdownrate;
 			// Bullet code
-			
+			with (instance_create_layer(x, y, "Bullets", oEBullet)) {
+				direction = other.image_angle + random_range(-1, 1);
+				speed = 10;
+				image_angle = direction;
+			}
 		}
 	}
 }
