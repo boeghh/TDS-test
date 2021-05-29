@@ -1,5 +1,5 @@
 with (other) {
-	hp--;
+	hp = hp - 25;
 	flash = 3;
 }
 

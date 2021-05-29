@@ -2,7 +2,7 @@
 mygun = instance_create_depth(x,y,-3,oEGun);
 
 //------------HEALTH AND FLASH SHADER VARIABLES
-hp = 4;
+hp = 100;
 flash = 0;
 
 //------------MOVEMENT
